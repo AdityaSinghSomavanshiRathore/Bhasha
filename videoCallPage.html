@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        a.topSectionLink {
+                position: absolute;
+                left: 50px;
+                top: 2px;
+                font-family: Goldman;
+                color:black;
+                font-size: 40px;
+                font-weight: 900;
+            }
+        section.topSection {
+                background-color:beige;
+                height: 50px;
+                color: black;
+                position: fixed;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                z-index: 1000;
+                box-shadow: 0px 1px 30px;
+            }
+            button {
+                background-color: slateblue;
+            }
+    </style>
+    <title>Video Calling Example</title>
+</head>
+<body>
+    <section class="topSection">
+        <a class="topSectionLink" href="First.html"><b><u>Bhasha</u></b></a>
+
+    </section>
+    <video id="localVideo" autoplay muted></video>
+    <video id="remoteVideo" autoplay></video>
+    <button id="startButton">Start Call</button>
+    <button id="endButton">End Call</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
